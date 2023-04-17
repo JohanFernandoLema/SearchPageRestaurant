@@ -21,7 +21,6 @@ nav{
     align-items: center;
     height: 6rem;
     font-size: 2rem;
-    color: var(--color-primary);
 }
 nav div button{
     outline: none;
@@ -29,6 +28,23 @@ nav div button{
     background: transparent;
     font-size: 1.3rem;
     color: var(--color-primary);
+}
+
+nav div span{
+    margin-left: 3rem;
+    color: var(--color-primary);
+    background: blue;
+    height: 4rem;
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+}
+
+nav div span i{
+    position: absolute;
+    left: 28%;
 }
 
 nav div button:nth-child(2){
