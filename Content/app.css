@@ -67,6 +67,27 @@ nav div button:nth-child(2){
 /* ====================== ASIDE SECTION ============================== */
 aside .right{
     background: var(--color-isabeline);
+    text-align: left;
+}
+aside .right h2{
+    padding: 1rem 0 .5rem 2rem;
+}
+aside .right h3{
+    padding: 2rem 0 .5rem 2rem;
+    font-size: 1.1rem;  
+}
+aside .right div #restaurantOptions{
+    margin-left: 2rem;
+    height: 2rem;
+    width: 70%;
+}
+aside .right .cuisine label{
+    display: block;
+    padding-bottom: .4rem;
+    padding-left: 2rem  ;
+}
+aside .right .cuisine input[type='checkbox']{
+    margin-right: 1rem;
 }
 
 
