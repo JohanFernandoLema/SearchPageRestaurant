@@ -1,4 +1,6 @@
 /* ====================== GLOBAL SET UP ============================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
 :root{
     --color-primary: #fff;
     --font-family:poppins , 'Sans-serif';
@@ -86,12 +88,21 @@ nav div button:nth-child(2){
 }
 
 /* ====================== ASIDE SECTION ============================== */
-aside .right{
+.container aside .right{
     background: var(--color-isabeline);
     text-align: left;
+    bottom: 0;
     height: 75vh;
     box-shadow: var(--box-shadow);
-}
+    position: relative;
+    animation: mymove 1s ease-in
+  }
+  
+  @keyframes mymove {
+    from {top: 0px;}
+    to {top: 200px;}
+  }
+
 aside .right h2{
     padding: 1rem 0 .5rem 2rem;
 }
