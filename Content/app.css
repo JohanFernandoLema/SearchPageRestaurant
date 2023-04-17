@@ -3,6 +3,7 @@
     --color-primary: #fff;
     --font-family:poppins , 'Sans-serif';
     --nav-background: #B3001B;
+    --color-isabeline:#E8F1F2;
 }
 
 *{
@@ -11,6 +12,16 @@
     box-sizing: border-box;
     font-family: var(--font-family);
 }
+
+.container{
+    display: grid;
+    margin: 0 auto;
+    width: 80%;
+    gap: 3rem;
+    grid-template-columns: 1fr 3fr;
+}
+
+
 
 /* ====================== NAVIGATION SECTION ============================== */
     /* margin: top, right , bottom , left */
@@ -52,6 +63,12 @@ nav div button:nth-child(2){
     padding: 7px 10px;
     margin: 0 5rem 0 2rem;
 }
+
+/* ====================== ASIDE SECTION ============================== */
+aside .right{
+    background: var(--color-isabeline);
+}
+
 
 /* ====================== MAIN SECTION ============================== */
 
