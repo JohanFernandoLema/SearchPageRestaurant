@@ -1,0 +1,17 @@
+@media screen and (max-width:700px){
+    .container{
+        grid-template-columns: 1fr;
+    }
+    .mainHeading h1{
+        font-size: 1.3rem;
+    }
+}
+
+/* @media screen and (max-width:1000px){
+    .container{
+        grid-template-columns: 1fr;
+    }
+    .mainHeading h1{
+        font-size: 1.3rem;
+    }
+} */
