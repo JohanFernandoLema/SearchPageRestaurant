@@ -84,7 +84,6 @@ nav div button:nth-child(2){
     background: var(--color-primary);
     border: none;
     box-shadow: 2px 2px 2px #383D3B;
-    display: none;
 }
 
 /* ====================== ASIDE SECTION ============================== */
@@ -95,12 +94,12 @@ nav div button:nth-child(2){
     height: 75vh;
     box-shadow: var(--box-shadow);
     position: relative;
-    animation: mymove 1s ease-in
+    animation: mymove 3s ease-in-out forwards
   }
   
   @keyframes mymove {
-    from {top: 0px;}
-    to {top: 200px;}
+    from {right: 1000px;}
+    to {left: 0;}
   }
 
 aside .right h2{
