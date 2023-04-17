@@ -66,12 +66,23 @@ nav div button:nth-child(2){
     margin: 0 5rem 0 2rem;
 }
 
+/* ====================== HEADING SECTION ============================== */
 .mainHeading h1{
     margin: 0 auto;
     width: 80%;
     font-size: 2.5rem;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
+}
+
+/* ====================== COLLAPSIBLE BUTTON ============================== */
+.container .openButton button{
+    font-size: 1.4rem;
+    width: 100%;
+    background: var(--color-primary);
+    border: none;
+    box-shadow: 2px 2px 2px #383D3B;
+    display: none;
 }
 
 /* ====================== ASIDE SECTION ============================== */

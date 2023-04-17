@@ -5,6 +5,10 @@
     .mainHeading h1{
         font-size: 1.3rem;
     }
+    .container .openButton button{
+        display: inline;
+        margin-bottom: 1rem;
+    }
 }
 
 /* @media screen and (max-width:1000px){
