@@ -90,6 +90,15 @@ aside .right .cuisine input[type='checkbox']{
     margin-right: 1rem;
 }
 
+aside .right .pricesList label{
+    display: block;
+    padding-bottom: .4rem;
+    padding-left: 2rem  ;
+}
+aside .right .pricesList input[type='radio']{
+    margin-right: 1rem;
+}
+
 
 /* ====================== MAIN SECTION ============================== */
 
