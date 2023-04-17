@@ -9,9 +9,6 @@
         display: inline;
         margin-bottom: 1rem;
     }
-    .container aside .right{
-        display: inline;
-      }
 }
 
 /* @media screen and (max-width:1000px){

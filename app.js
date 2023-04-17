@@ -1,6 +1,6 @@
-const openFilters = document.querySelector("openButton");
-const sideFilters = documetn.querySelector("aside");
+const closeBtn = document.querySelector("#open-btn");
+const sideFilters = document.querySelector("aside");
 
-openFilters.addEventListener('click', () =>{
-    sideFilters.style.display = "block";
+closeBtn.addEventListener('click', () =>{
+    sideFilters.style.display = "none";
 })
