@@ -143,8 +143,11 @@ aside .right .pricesSorting label{
 
 /* Photos */
 .photo{
-    width: 100%;
-    height: 100%;
+    width: 60%;
+    height: 80%;
+    position: relative;
+    top: 10%;
+    left: 15%;
 }
 .menu-display .cards{
     text-transform: capitalize;
@@ -154,8 +157,8 @@ aside .right .pricesSorting label{
     padding: 2rem;
     margin-bottom: 2rem;
     background-color: #383D3B;
+    height: 30vh;
 }
-
 .menu-display div hr{
     margin: 1rem 0;
     border: 1.2px dotted gold;

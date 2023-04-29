@@ -15,6 +15,14 @@ const asianCuisine = [
         priceForTwo: 1200,
         desc: "A classic Chinese sweet and sour pork stir-fry recipe made with juicy pieces of pork tenderloin, bell peppers, onion, and pineapple."
     },
+    {
+        id: 3,
+        img: "./Assets/images/stickyRice.jpg",
+        cuisine: "chinese",
+        mealName: "zong zi: sticky rice dumpling",
+        priceForTwo: 400,
+        desc: "it’s usually pyramid-shaped wrap, with fillings like dried shrimp, mushrooms, peanuts, or chestnuts in addition to pork. Sometimes there’s pickled radish, along with salted egg yolk, plus other bits of crunch to counter the sticky chew of the rice."
+    },
 ]
 
 const menuDisplay = document.querySelector('.menu-display');
@@ -55,14 +63,15 @@ filterByPrice.forEach(function(priceCheck){
         // console.log(priceComparison);
         const sortItems = priceComparison.sort(function(a,b){
             if(priceSort == "low"){
-                return b.priceForTwo - a.priceForTwo;
-            }
-            else{
+                displayItems(priceComparison)
                 return a.priceForTwo - b.priceForTwo;
             }
-            
-        })
-        console.log(sortItems);
+            else{
+                displayItems(priceComparison)
+                return b.priceForTwo - a.priceForTwo;
+            } 
+        });
+            console.log(sortItems);
     });
     
 });
