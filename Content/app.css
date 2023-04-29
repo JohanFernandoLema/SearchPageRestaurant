@@ -147,6 +147,7 @@ aside .right .pricesSorting label{
     height: 100%;
 }
 .menu-display .cards{
+    text-transform: capitalize;
     display: grid;
     grid-template-columns: 40% 60%;
     gap: 1rem;
