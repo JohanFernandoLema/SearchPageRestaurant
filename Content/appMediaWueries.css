@@ -1,4 +1,4 @@
-@media screen and (max-width:700px){
+@media screen and (max-width:1500px){
     .container{
         grid-template-columns: 1fr;
     }
@@ -8,6 +8,9 @@
     .container .openButton button{
         display: inline;
         margin-bottom: 1rem;
+    }
+    .right{
+        display: none;
     }
 }
 
