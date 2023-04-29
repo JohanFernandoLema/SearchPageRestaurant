@@ -5,7 +5,7 @@
     --color-primary: #fff;
     --font-family:poppins , 'Sans-serif';
     --nav-background: #B3001B;
-    --color-isabeline:#E8F1F2;
+    --color-isabeline:#383D3B;
     --color-light: rgba(120, 120, 20, 0.18);
     --box-shadow: 0 2rem 3rem var(--color-light);
 }
@@ -17,6 +17,10 @@
     font-family: var(--font-family);
 }
 
+body{
+    background-color: #001011;
+    color: #fff;
+}
 .container{
     display: grid;
     margin: 0 auto;
@@ -78,7 +82,7 @@ nav div button:nth-child(2){
 }
 
 /* ====================== COLLAPSIBLE BUTTON ============================== */
-.container .openButton button{
+.container .nav-toggle button{
     font-size: 1.4rem;
     width: 100%;
     background: var(--color-primary);
@@ -88,20 +92,22 @@ nav div button:nth-child(2){
 
 /* ====================== ASIDE SECTION ============================== */
 .container aside .right{
-    background: var(--color-isabeline);
+    background: var(--color-isabeline); 
     text-align: left;
-    height: 75vh;
     box-shadow: var(--box-shadow);
-  }
-  
-  @keyframes mymove {
-  }
+    transition: all 0.4s linear;
+    padding: 1rem;
+    margin-bottom: 3rem;
+}
+@keyframes mymove {
+
+}
 
 aside .right h2{
-    padding: 1rem 0 .5rem 2rem;
+    padding: 1rem 0 0 2rem;
 }
 aside .right h3{
-    padding: 2rem 0 .5rem 2rem;
+    padding: 1rem 0 .5rem 2rem;
     font-size: 1.1rem;  
 }
 aside .right div #restaurantOptions{
@@ -121,14 +127,37 @@ aside .right .cuisine input[type='checkbox']{
 aside .right .pricesList label{
     display: block;
     padding-bottom: .4rem;
-    padding-left: 2rem  ;
+    padding-left: 2rem;
 }
 aside .right .pricesList input[type='radio']{
     margin-right: 1rem;
 }
+aside .right .pricesSorting label{
+    display: block;
+    padding-left: 2rem;
+}
+
 
 
 /* ====================== MAIN SECTION ============================== */
 
+/* Photos */
+.photo{
+    width: 100%;
+    height: 100%;
+}
+.menu-display .cards{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 1rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    background-color: #383D3B;
+}
+
+.menu-display div hr{
+    margin: 1rem 0;
+    border: 1.2px dotted gold;
+}
 
 
