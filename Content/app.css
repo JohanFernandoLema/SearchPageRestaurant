@@ -86,6 +86,7 @@ nav div button:nth-child(2){
     font-size: 1.4rem;
     width: 100%;
     background: var(--color-primary);
+    display: none;
     border: none;
     box-shadow: 2px 2px 2px #383D3B;
 }
@@ -96,7 +97,6 @@ nav div button:nth-child(2){
     text-align: left;
     box-shadow: var(--box-shadow);
     transition: all 0.4s linear;
-    margin-bottom: 3rem;
 }
 @keyframes mymove {
 

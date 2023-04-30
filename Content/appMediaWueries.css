@@ -13,6 +13,15 @@
     .show-menu{
         height: 75vh;
     }
+    .container .nav-toggle{
+        cursor: pointer;
+        display: block;
+        outline: none;
+        transition: all 0.3s linear;
+    }
+    .container .arrowMoving:hover{
+        transform: rotate(90deg);
+    }
 }
 
 /* @media screen and (max-width:1000px){
