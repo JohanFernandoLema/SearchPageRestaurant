@@ -5,12 +5,13 @@
     .mainHeading h1{
         font-size: 1.3rem;
     }
-    .container .openButton button{
-        display: inline;
-        margin-bottom: 1rem;
-    }
     .right{
-        display: none;
+        height: 0;
+        overflow: hidden;
+        transition: opacity 1000ms linear;
+    }
+    .show-menu{
+        height: 75vh;
     }
 }
 

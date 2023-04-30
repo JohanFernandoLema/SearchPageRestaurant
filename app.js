@@ -81,5 +81,9 @@ const openCollap = document.querySelector('.nav-toggle');
 const appearCollap = document.querySelector('.right');
 
 openCollap.addEventListener('click', function(){
-    appearCollap.style.display = 'block';
-})
+    appearCollap.classList.toggle('show-menu');
+});
+
+
+
+

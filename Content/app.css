@@ -82,7 +82,7 @@ nav div button:nth-child(2){
 }
 
 /* ====================== COLLAPSIBLE BUTTON ============================== */
-.container .nav-toggle button{
+.container .nav-toggle{
     font-size: 1.4rem;
     width: 100%;
     background: var(--color-primary);
@@ -96,7 +96,6 @@ nav div button:nth-child(2){
     text-align: left;
     box-shadow: var(--box-shadow);
     transition: all 0.4s linear;
-    padding: 1rem;
     margin-bottom: 3rem;
 }
 @keyframes mymove {
