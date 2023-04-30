@@ -61,17 +61,16 @@ filterByPrice.forEach(function(priceCheck){
             return priceToSort;
         });
         // console.log(priceComparison);
-        const sortItems = priceComparison.sort(function(a,b){
             if(priceSort == "low"){
-                displayItems(priceComparison)
-                return a.priceForTwo - b.priceForTwo;
+                displayItems(priceComparison.sort(function(a,b){
+                    return a.priceForTwo - b.priceForTwo;                    
+                }))         
             }
             else{
-                displayItems(priceComparison)
-                return b.priceForTwo - a.priceForTwo;
+                displayItems(priceComparison.sort(function(a,b){
+                    return b.priceForTwo - a.priceForTwo;                    
+                }));
             } 
-        });
-            console.log(sortItems);
     });
     
 });
