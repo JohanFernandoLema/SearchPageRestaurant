@@ -4,10 +4,11 @@
 :root{
     --color-primary: #fff;
     --font-family:poppins , 'Sans-serif';
-    --nav-background: #B3001B;
+    --nav-background: #220901;
     --color-isabeline:#383D3B;
     --color-light: rgba(120, 120, 20, 0.18);
     --box-shadow: 0 2rem 3rem var(--color-light);
+    --boxes-background:darkgoldenrod;
 }
 
 *{
@@ -52,13 +53,12 @@ nav div button{
 nav div span{
     margin-left: 3rem;
     color: var(--color-primary);
-    background: blue;
-    height: 4rem;
-    width: 4rem;
-    display: flex;
-    align-items: center;
-    border-radius: 50%;
-    position: relative;
+    cursor: pointer;
+}
+nav div span::before{
+    content: '';
+    width: 10%;
+    border: 2px solid var(--boxes-background);
 }
 
 nav div span i{
@@ -70,6 +70,7 @@ nav div button:nth-child(2){
     border: 2px solid var(--color-primary);
     padding: 7px 10px;
     margin: 0 5rem 0 2rem;
+    background-color: var(--boxes-background);
 }
 
 /* ====================== HEADING SECTION ============================== */

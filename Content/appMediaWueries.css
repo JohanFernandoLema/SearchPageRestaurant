@@ -11,7 +11,7 @@
         transition: opacity 1000ms linear;
     }
     .show-menu{
-        height: 75vh;
+        height: 80vh;
     }
     .container .nav-toggle{
         cursor: pointer;
