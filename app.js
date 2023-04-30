@@ -18,7 +18,7 @@ const asianCuisine = [
     {
         id: 3,
         img: "./Assets/images/stickyRice.jpg",
-        cuisine: "chinese",
+        cuisine: "taiwanese",
         mealName: "zong zi: sticky rice dumpling",
         priceForTwo: 400,
         desc: "it’s usually pyramid-shaped wrap, with fillings like dried shrimp, mushrooms, peanuts, or chestnuts in addition to pork. Sometimes there’s pickled radish, along with salted egg yolk, plus other bits of crunch to counter the sticky chew of the rice."
@@ -26,6 +26,12 @@ const asianCuisine = [
 ]
 
 const menuDisplay = document.querySelector('.menu-display');
+//cuisine sort targetting
+const checkJapan = document.getElementById('japanCuisine');
+const checkChina = document.getElementById('china');
+const filterByCuisine = document.querySelectorAll('.filterCuisine')
+
+//Sorting by price
 const filterByPrice = document.querySelectorAll('.filterPrice');
 
 window.addEventListener('DOMContentLoaded', function(){
@@ -51,23 +57,33 @@ function displayItems(arrayOfItems){
     menuDisplay.innerHTML = menuItems;
     // console.log(menuItems);
 }
+// ============= Sort items by their cuisine type ==============
+//for each loop in order to iterate along the buttons 
+filterByCuisine.forEach(function(selectCuisine){
+    selectCuisine.addEventListener('click', function(e){
+        const cuisine = e.currentTarget.dataset.id;
+        const cuisineComparison = asianCuisine.filter(function(cuisineToSort){
+            // console.log(cuisineToSort.cuisine);
+            if(cuisineToSort.cuisine == cuisine){
+                return cuisineToSort;
+            }
+        })
+        // console.log(cuisineComparison);
+    })
+});
 
-//Sort items by their price
+// =============== Sort items by their price ================
 filterByPrice.forEach(function(priceCheck){
     priceCheck.addEventListener('click', function(e){
         const priceSort = e.currentTarget.dataset.id;
-        const priceComparison = asianCuisine.filter(function(priceToSort){
-            // console.log(priceToSort.priceForTwo);
-            return priceToSort;
-        });
         // console.log(priceComparison);
             if(priceSort == "low"){
-                displayItems(priceComparison.sort(function(a,b){
+                displayItems(asianCuisine.sort(function(a,b){
                     return a.priceForTwo - b.priceForTwo;                    
                 }))         
             }
             else{
-                displayItems(priceComparison.sort(function(a,b){
+                displayItems(asianCuisine.sort(function(a,b){
                     return b.priceForTwo - a.priceForTwo;                    
                 }));
             } 
