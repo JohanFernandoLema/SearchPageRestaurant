@@ -60,6 +60,18 @@ nav div span::before{
     width: 10%;
     border: 2px solid var(--boxes-background);
 }
+nav div span:hover::before{ 
+    position: relative;
+    animation-name: changeWord;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+@keyframes changeWord {
+    from{left: 0;}
+    to{left: 80%;}
+}
 
 nav div span i{
     position: absolute;
@@ -98,9 +110,6 @@ nav div button:nth-child(2){
     text-align: left;
     box-shadow: var(--box-shadow);
     transition: all 0.4s linear;
-}
-@keyframes mymove {
-
 }
 
 aside .right h2{
